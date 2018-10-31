@@ -1,0 +1,47 @@
+/* pages/components/header/header.wxss */
+.navTitle{
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%; 
+  text-align: center;
+  
+  font-size: 42rpx;
+  background: #fff;
+  
+}
+.navTitle .navBack{
+  position: absolute;
+  left: 0;
+  top: 8rpx;
+  padding: 0 30rpx;
+  display: inline-block; 
+}
+
+.navTitle navigator image {
+    width: 36rpx;
+    height: 36rpx;
+}
+.navTitle-kong{
+  height: 40rpx;
+  background: #c6c6c6;
+}
+.navTitle-title{
+line-height: 95rpx;
+  height: 95rpx; 
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+}
+.bindgotoMiniGame{
+  position: fixed;
+  z-index: 999;
+  bottom: 100rpx;
+  right: 10rpx;
+}
+
+.bindgotoMiniGame2{
+  position: fixed;
+  z-index: 999;
+  bottom: 100rpx;
+  left: 10rpx;
+}

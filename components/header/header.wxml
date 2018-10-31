@@ -1,0 +1,18 @@
+<!--pages/components/header/header.wxml-->
+<view class='navTitle'>
+    <view wx:if='{{isHui}}' class='navTitle-kong' style='{{isIphoneX ? "height:60rpx" : ""}}'></view>
+    <view class='navTitle-title' wx:if='{{isText}}'>
+      {{headerTitle}}
+      <navigator class='navBack' wx:if='{{isback}}' open-type='navigateBack' hover-class='none'>
+        <image src='/image/headerBack.png'></image>
+      </navigator>
+    </view>
+    <navigator wx:if='{{isGame}}' class='bindgotoMiniGame' hover-class='none' target="miniProgram" open-type="navigate" app-id="wx1edbcae1e70a5189" path="" extra-data="" version="release">
+      <image class='' style='width: 131rpx;height:135rpx;' src='/image/gotoMiniGame.png'></image>
+    </navigator>
+
+    <navigator bindtap='onTapOtherImg' wx:if='{{serverInfo.is_jump_other1 && isGame}}' class='bindgotoMiniGame2' hover-class='none' target="miniProgram" open-type="navigate" app-id="{{serverInfo.jump_other_appid}}" path="{{serverInfo.jump_other_page}}" extra-data="" version="release">
+      <image class='' style='width: 131rpx;height:135rpx;' src='{{serverInfo.jump_other_img}}'></image>
+    </navigator>
+    
+</view>
